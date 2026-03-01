@@ -1,0 +1,87 @@
+@layer base, utils, components;
+
+/* Base */
+@import '@webtui/css/base.css';
+
+/* Utils */
+@import '@webtui/css/utils/box.css';
+
+/* Components */
+@import '@webtui/css/components/badge.css';
+@import '@webtui/css/components/button.css';
+@import '@webtui/css/components/typography.css';
+
+@import '@webtui/theme-catppuccin';
+
+/* Layout */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--surface1);
+    font-size: 2.5rem;
+}
+
+.nav-right {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Content */
+.container {
+    padding: 2rem;
+}
+
+/* Title padding */
+.mp {
+    padding: 0.5rem;
+}
+
+/* Project Card */
+.project-card {
+    border: 1px solid var(--surface0);
+    background: var(--base);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+.project-card h2 {
+    margin: 0;
+}
+
+.project-card p {
+    margin: 0;
+    color: var(--subtext1);
+}
+
+/* Footer area */
+.project-card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.card-button {
+    padding: 0.5rem 1rem;
+    background: var(--mauve);
+    color: var(--base);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+}
+
+.card-button:hover {
+    background: var(--lavender);
+}
