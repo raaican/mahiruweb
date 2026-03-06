@@ -49,7 +49,7 @@ Bun.serve({
     if (url.pathname === "/login" && req.method === "POST") {
       const body = await req.json()
 
-      if (!body.username || body.username.length > 32 || !Number.isInteger(id) || String(id).length > 15) {
+      if (!body.username || body.username.length > 32) {
         return Response.json({ success: false }, { headers: corsHeaders })
       }
 
