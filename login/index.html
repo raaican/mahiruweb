@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-webtui-theme="catppuccin-mocha">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About mahiru</title>
+  </head>
+  <body>
+      <nav class="nav">
+         <div class="nav-left">
+             <span is-="badge" variant-="mauve">MAHIRU</span> 
+          </div> 
+
+          <div class="nav-right">
+              <button variant-="pink" onclick="location.href='/'">Home</button>
+              <button variant-="pink" onclick="location.href='/project'">Projects</button>
+              <button variant-="pink" onclick="location.href='/about'">About</button>
+          </div>
+      </nav>
+      <main class="container">
+      <h1>Login</h1>
+      <div class="login-form">
+        <input id="username" placeholder="username">
+        <input id="userid" placeholder="unix id">
+
+        <button id="login-btn">
+          Login
+        </button>
+        <div id="login-result"></div>
+      </div>
+      </main>
+    <script type="module" src="/src/login.js"> </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

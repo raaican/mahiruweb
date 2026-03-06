@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@webtui/css": "^0.1.6",
-    "@webtui/theme-catppuccin": "^0.0.3"
+    "@webtui/theme-catppuccin": "^0.0.3",
+    "better-sqlite3": "^12.6.2"
   }
 }
